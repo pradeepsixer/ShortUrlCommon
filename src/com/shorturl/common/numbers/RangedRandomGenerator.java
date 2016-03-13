@@ -36,7 +36,7 @@ public class RangedRandomGenerator<T extends Number> {
 	 * @return A random number
 	 */
 	@SuppressWarnings("unchecked")
-	public T getRandomNumber() {
+	public T getRandomNumber() throws UnsupportedDataTypeException {
 		T randomNumber = null;
 		if (startNum instanceof Integer) {
 			int temp = (int) (startNum.intValue() + (endNum.intValue() - startNum.intValue()) * randomGenerator.nextDouble());
@@ -50,8 +50,7 @@ public class RangedRandomGenerator<T extends Number> {
 			temp.add(new BigDecimal((BigInteger)startNum));
 			randomNumber = (T) temp.toBigInteger();
 		} else {
-			// TODO - Classify it as appropriate exception type
-			throw new Error("Unsupported Generic Type");
+			throw new UnsupportedDataTypeException(startNum.getClass());
 		}
 		return randomNumber;
 	}
