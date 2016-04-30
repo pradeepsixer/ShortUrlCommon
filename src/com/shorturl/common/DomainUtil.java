@@ -34,7 +34,7 @@ public class DomainUtil {
 			domainUrlBuilder.append(":" + request.getServerPort());
 		}
 		domainUrlBuilder.append("/");
-		
+
 		return domainUrlBuilder.toString();
 	}
 
