@@ -4,6 +4,8 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Random;
 
+import com.shorturl.common.exception.UnsupportedDataTypeException;
+
 /**
  * Generates a random number for the given type within the specified range.
  * 

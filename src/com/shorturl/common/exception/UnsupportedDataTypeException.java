@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.shorturl.common.numbers;
+package com.shorturl.common.exception;
 
 /**
  * When an unsupported data type is used (particularly within a generic)

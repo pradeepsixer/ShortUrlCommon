@@ -4,13 +4,17 @@
 package com.shorturl.common;
 
 /**
- * @author Pradeep Kumar
  * Constants file for HTTP headers and HTTP status codes  
+ * @author Pradeep Kumar
  */
 public class HttpConstants {
 	private HttpConstants() {
 	}
 
+	/**
+	 * HTTP Headers
+	 * @author Pradeep Kumar
+	 */
 	public static class HttpHeaders {
 		private HttpHeaders() {
 		}
@@ -18,6 +22,10 @@ public class HttpConstants {
 		public static final String REFERER = "Referer";
 	}
 
+	/**
+	 * HTTP Status Codes
+	 * @author Pradeep Kumar
+	 */
 	public static class StatusCodes {
 		private StatusCodes() {
 		}
